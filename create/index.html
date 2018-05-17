@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AP Create Task</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+</head>
+
+<body>
+    <style>
+        body {
+            border: none;
+        }
+    </style>
+    <script type="text/javascript">
+        var num = 20;
+        var range = 40;
+        var ax = [];
+        var ay = [];
+
+        function setup() {
+            createCanvas(800, 300);
+            for (var i = 0; i < num; i++) {
+                ax[i] = width / 2;
+                ay[i] = height / 2;
+            }
+            frameRate(20);
+        }
+
+        function draw() {
+            background(255, 0, 70, 15);
+            // Makes the line go to the left, so it won't stay put in the center
+            moveLeft();
+
+            // Adds a new random point to the line 
+            ax[num - 1] += random(-range, range);
+            ay[num - 1] += random(-range, range);
+
+            // Keeps the line from going off the screen
+            ax[num - 1] = constrain(ax[num - 1], 0, width);
+            ay[num - 1] = constrain(ay[num - 1], 0, height);
+
+            //calls the art function
+            art();
+        }
+        var xPos;
+        // Draws a line connecting the points and all the random ellipses
+        function art() {
+            for (var j = 1; j < num; j++) {
+                var thick = random(2, 8);
+                var xPos = random(width / 2, width);
+                var yPos = random(0, height);
+                var radius = random(1, 25);
+                stroke(255, 175, 0);
+                line(ax[j - 1], ay[j - 1], ax[j], ay[j]);
+                strokeWeight(thick);
+                ellipse(xPos, yPos, radius, radius);
+            }
+
+            for (var j = 1; j < num; j++) {
+                var thick = random(2, 8);
+                var xPos2 = random(0, width / 2);
+                var yPos2 = random(0, height);
+                var radius = random(1, 25);
+                stroke(0, 190, 255);
+                line(ax[j - 1], ay[j - 1], ax[j], ay[j]);
+                strokeWeight(thick);
+                ellipse(xPos2, yPos2, radius, radius);
+            }
+
+        }
+
+        function moveLeft(move) {
+            var move = 1;
+            for (var i = 1; i < num; i++) {
+                ax[i - move] = ax[i];
+                ay[i - move] = ay[i];
+            }
+        }
+    </script>
+
+</body>
+
+</html>

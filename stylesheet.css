@@ -1,0 +1,78 @@
+body {
+    background: linear-gradient(#003853, #45BB89);
+    color: #91D4C2;
+}
+
+.title {
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #45BB89;
+}
+
+.content {
+    text-align: left;
+    margin: 0 auto;
+    width: 1000px;
+
+}
+
+.strengths {
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
+
+#threeStrengths {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    color: #91D4C2;
+    text-align: left;
+}
+
+p {
+    font-family: 'Rubik', sans-serif;
+    color: #91D4C2;
+}
+
+#me {
+    width: 720px;
+    text-align: center;
+}
+
+.nav-items {
+    text-decoration: none;
+    background-color: #3D82AB;
+    color: #91D4C2;
+    font-family: 'Rubik', sans-serif;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+.nav {
+    text-align: center;
+}
+
+.pic {
+    width: 500px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+iframe {
+    border-style: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.bg {
+    background-image: url("http://www.mortstock.com/wp-content/themes/mortfolio/assets/img/content/mountains.png");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
