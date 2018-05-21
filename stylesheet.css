@@ -6,15 +6,14 @@ body {
 .title {
     font-family: 'Rubik', sans-serif;
     font-size: 30px;
-    text-align: center;
+    margin: 0 auto;
     color: #45BB89;
 }
 
 .content {
-    text-align: left;
-    margin: 0 auto;
-    width: 1000px;
-
+    margin: auto;
+    width: 100%;
+    text-align: center;
 }
 
 .strengths {
@@ -27,17 +26,20 @@ body {
     text-align: center;
     font-family: 'Rubik', sans-serif;
     color: #91D4C2;
-    text-align: left;
+    margin: auto;
+    width: 50%;
+
 }
 
 p {
     font-family: 'Rubik', sans-serif;
     color: #91D4C2;
+    text-align: center;
 }
 
-#me {
-    width: 720px;
-    text-align: center;
+.me {
+    margin: auto;
+    width: 50%;
 }
 
 .nav-items {
@@ -52,27 +54,31 @@ p {
 
 .nav {
     text-align: center;
+
 }
 
 .pic {
-    width: 500px;
-    height: 250px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    width: 100%;
 }
 
 iframe {
     border-style: none;
-    display: block;
-    margin: 0 auto;
+    margin: auto;
+    width: 850px;
 }
 
-.bg {
-    background-image: url("http://www.mortstock.com/wp-content/themes/mortfolio/assets/img/content/mountains.png");
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+#create {
+    margin: auto;
+    width: 50%;
+}
+
+#explore {
+    margin: auto;
+    width: 50%;
+}
+
+.picture {
+    margin: auto;
+    width: 50%;
 }
