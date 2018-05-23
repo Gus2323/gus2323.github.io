@@ -18,8 +18,9 @@ body {
 
 .strengths {
     font-family: 'Rubik', sans-serif;
-    font-size: 22px;
+    font-size: 30px;
     text-align: center;
+    color: #5BFFD7;
 }
 
 #threeStrengths {
@@ -28,13 +29,13 @@ body {
     color: #91D4C2;
     margin: auto;
     width: 50%;
-
 }
 
 p {
     font-family: 'Rubik', sans-serif;
     color: #91D4C2;
-    text-align: center;
+    text-align: left;
+    width: 100%;
 }
 
 .me {
@@ -81,5 +82,11 @@ iframe {
 .picture {
     margin: auto;
     width: 50%;
-    height: 200px;
+    height: 25%/;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
 }
